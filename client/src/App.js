@@ -5,6 +5,7 @@ import Create from "./components/Create";
 import Details from "./components/Details";
 import Edit from "./components/Edit";
 import List from "./components/List";
+import Random from './components/Random';
 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
       </Route>
       <Route path="/places/:id/edit">
         <Edit />
+      </Route>
+      <Route path="/random">
+        <Random />
       </Route>
     </div>
   );

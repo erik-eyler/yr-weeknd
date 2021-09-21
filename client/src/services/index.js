@@ -28,11 +28,11 @@ export const deletePlace = async (id) => {
 }
 
 const fields = {
-  location,
-  activity,
-  length,
-  rating,
-  description,
+  // location,
+  // activity,
+  // length,
+  // rating,
+  // description,
 };
 
 export const newPlace = async () => {

@@ -46,7 +46,19 @@ export default function Create() {
   return (
     <div>
       <h3>Create a new destination</h3>
-      <Form location={location} setLocation={setLocation} activity={activity} setActivity={setActivity} length={length} setLength={setLength} rating={rating} setRating={setRating} description={description} setDescription={setDescription} handleSubmit={handleSubmit} type={"Create"}/>
+      <Form
+        location={location}
+        setLocation={setLocation}
+        activity={activity}
+        setActivity={setActivity}
+        length={length}
+        setLength={setLength}
+        rating={rating}
+        setRating={setRating}
+        description={description}
+        setDescription={setDescription}
+        handleSubmit={handleSubmit}
+        type={"Create"} />
     </div>
   )
 }

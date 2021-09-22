@@ -35,7 +35,7 @@ export const deletePlace = async (id) => {
 //   // description,
 // };
 
-// export const newPlace = async () => {
-//   const res = await axios.post(`${URL}/`, {fields} , config);
+// export const newPlace = async (id, fields) => {
+//   const res = await axios.post(`${URL}/${id}`, {fields} , config);
 //   return res.data;
 // }

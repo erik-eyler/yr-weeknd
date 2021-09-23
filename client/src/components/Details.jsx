@@ -16,11 +16,11 @@ export default function Details() {
   }, []);
 
   return (
-    <div className="container mx-auto px-4">
-      <div className="flex flex-wrap -mx-4" >
-        <img src={place?.fields?.image} alt="Yr Weeknd" />
+    <div className="bg-indigo-300 rounded-lg shadow-lg">
+      <div className="flex flex-wrap w-1/2 mb-4" >
+        <img src={place?.fields?.image} className="rounded-lg shadow" alt="Yr Weeknd" />
       </div>
-      <div className="flex flex-wrap mb-4" >
+      <div className="flex mb-4" >
         <h4>Location: {place?.fields?.location}</h4>
       </div>
       <div className="flex flex-wrap mb-4" >

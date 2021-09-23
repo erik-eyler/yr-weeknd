@@ -12,19 +12,19 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Route path="/">
+      <Route exact path="/">
         <div>Home</div>
       </Route>
-      <Route path="/places">
+      <Route exact path="/places">
         <List />
       </Route>
-      <Route path="/places/:id">
+      <Route exact path="/places/:id">
         <Details />
       </Route>
       <Route path="/new">
         <Create />
       </Route>
-      <Route path="/places/:id/edit">
+      <Route exact path="/places/:id/edit">
         <Edit />
       </Route>
       <Route path="/random">

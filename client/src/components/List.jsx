@@ -12,7 +12,8 @@ export default function List() {
   }, []);
 
   return (
-    <div>
+    <div className="container mx-auto">
+      <div className="grid grid-cols-3 gap-4">
       {places.map((place) => {
         return (
           <Link to={`/places/${place.id}`} key={place.id}>
@@ -20,6 +21,7 @@ export default function List() {
           </Link>
         );
       })}
+      </div>
     </div>
   )
 }

@@ -16,13 +16,25 @@ export default function Details() {
   }, []);
 
   return (
-    <div>
-      <h4>Location: {place?.fields?.location}</h4>
-      <h4>Activity: {place?.fields?.activity}</h4>
-      <h4>Length: {place?.fields?.length}</h4>
-      <h4>Rating: {place?.fields?.rating}</h4>
-      <h4>Description: {place?.fields?.description}</h4>
-      <img src={place?.fields?.image} alt="Yr Weeknd"/>
+    <div className="container mx-auto px-4">
+      <div className="flex flex-wrap -mx-4" >
+        <img src={place?.fields?.image} alt="Yr Weeknd" />
+      </div>
+      <div className="flex flex-wrap mb-4" >
+        <h4>Location: {place?.fields?.location}</h4>
+      </div>
+      <div className="flex flex-wrap mb-4" >
+        <h4>Activity: {place?.fields?.activity}</h4>
+      </div>
+      <div className="flex flex-wrap mb-4" >
+        <h4>Length: {place?.fields?.length}</h4>
+      </div>
+      <div className="flex flex-wrap mb-4" >
+        <h4>Rating: {place?.fields?.rating}</h4>
+      </div>
+      <div className="flex flex-wrap mb-4" >
+        <h4>Description: {place?.fields?.description}</h4>
+      </div>
       <Link to={`/places/${place.id}/edit`}>Edit</Link>
       <Delete id={place.id} />
     </div>

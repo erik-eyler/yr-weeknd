@@ -58,7 +58,7 @@ export default function Create() {
         description={description}
         setDescription={setDescription}
         handleSubmit={handleSubmit}
-        type={"Create"} />
+        type={"Submit"} />
     </div>
   )
 }

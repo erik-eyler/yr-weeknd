@@ -29,7 +29,7 @@ export default function Form(props) {
         <br />
         </div>
         
-        <button>{props.type}</button>
+        <button className="bg-indigo-300 hover:bg-indigo-500 text-white font-bold py-2 px-3 rounded">{props.type}</button>
         </form>
       </div>
     </div>

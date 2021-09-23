@@ -3,14 +3,13 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-  <nav>
-    <Link to="/"><h1>Home</h1></Link>
-    <ul>
-      <li><Link to="/places">All Places</Link></li>
-      <li><Link to="/new">New Place</Link></li>
-      <li><Link to="/random">Random Place</Link></li>
+  <nav className='flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono' >
+    <Link to="/" className='pl-8'>Yr Weeknd</Link>
+    <Link to="/places">All Places</Link>
+    <Link to="/new">New Place</Link>
+    <Link to="/random">Random Place</Link>
 
-    </ul>
+    
   </nav>
   )
 }

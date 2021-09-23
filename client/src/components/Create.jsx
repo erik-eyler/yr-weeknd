@@ -22,6 +22,8 @@ export default function Create() {
   const [length, setLength] = useState("");
   const [rating, setRating] = useState("");
   const [description, setDescription] = useState("");
+  const [image, setImage] = useState("");
+
   const history = useHistory();
 
   const handleSubmit = async (e) => {
@@ -32,6 +34,7 @@ export default function Create() {
       length,
       rating,
       description,
+      image,
     };
     const res = await axios.post(URL, { fields }, config);
     history.push(`/places/${res.data.id}`)
@@ -57,6 +60,8 @@ export default function Create() {
         setRating={setRating}
         description={description}
         setDescription={setDescription}
+        image={image}
+        setImage={setImage}
         handleSubmit={handleSubmit}
         type={"Submit"} />
     </div>

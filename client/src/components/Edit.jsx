@@ -22,6 +22,7 @@ export default function Edit() {
   const [length, setLength] = useState("");
   const [rating, setRating] = useState("");
   const [description, setDescription] = useState("");
+  const [image, setImage] = useState("");
   const history = useHistory();
   const { id } = useParams();
 
@@ -34,6 +35,7 @@ export default function Edit() {
       setLength(fields.length);
       setRating(fields.rating);
       setDescription(fields.description);
+      setImage(fields.image);
     };
     fetchPlace();
     // eslint-disable-next-line
@@ -47,6 +49,7 @@ export default function Edit() {
       length,
       rating,
       description,
+      image,
     };
     const res = await axios.put(`${URL}/${id}`, { fields }, config);
     history.push(`/places/${res.data.id}`);
@@ -66,6 +69,8 @@ export default function Edit() {
         setRating={setRating}
         description={description}
         setDescription={setDescription}
+        image={image}
+        setImage={setImage}
         handleSubmit={handleSubmit}
         type={"Edit"}
       />

@@ -57,7 +57,6 @@ export default function Edit() {
 
   return (
     <div>
-      <h4>Submit Edit</h4>
       <Form
         location={location}
         setLocation={setLocation}

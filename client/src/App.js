@@ -5,7 +5,7 @@ import Create from "./components/Create";
 import Details from "./components/Details";
 import Edit from "./components/Edit";
 import List from "./components/List";
-import Random from './components/Random';
+// import Random from './components/Random';
 import { Link } from "react-router-dom";
 
 
@@ -33,9 +33,9 @@ function App() {
       <Route exact path="/places/:id/edit">
         <Edit />
       </Route>
-      <Route path="/random">
+      {/* <Route path="/random">
         <Random />
-      </Route>
+      </Route> */}
     </div>
   );
 }

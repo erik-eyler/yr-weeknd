@@ -7,7 +7,7 @@ export default function Navbar() {
     <Link to="/" className='pl-8'>Yr Weeknd</Link>
     <Link to="/places" className='p-4'>All Places</Link>
     <Link to="/new" className='p-4'>New Place</Link>
-    <Link to="/random" className='p-4'>Random Place</Link>
+    {/* <Link to="/random" className='p-4'>Random Place</Link> */}
 
     
   </nav>

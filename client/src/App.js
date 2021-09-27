@@ -6,6 +6,9 @@ import Details from "./components/Details";
 import Edit from "./components/Edit";
 import List from "./components/List";
 import Random from './components/Random';
+import { Link } from "react-router-dom";
+
+
 
 
 function App() {
@@ -13,7 +16,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Route exact path="/">
-        <div>Home</div>
+        <div className="py-10">
+        <button className="w-40 h-20 bg-indigo-300 hover:bg-indigo-500 text-white font-bold py-2 px-3 rounded"><Link to="/places">Browse Places</Link></button>
+
+        </div>
       </Route>
       <Route exact path="/places">
         <List />

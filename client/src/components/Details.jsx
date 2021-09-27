@@ -24,7 +24,7 @@ export default function Details() {
           <img src={place?.fields?.image} className="rounded-lg shadow" alt="Yr Weeknd" />
         </div>
         <div className="md:w-2/3 w-full px-4 flex flex-row flex-wrap">
-          <div className="mb-2 uppercase font-bold text-lg text-grey-darkest text-left" >
+          <div className="mb-2 uppercase font-bold text-lg text-grey-darkest text-left shadow-sm font-mono" >
             <p>Location: {place?.fields?.location}</p>
             <p>Activity: {place?.fields?.activity}</p>
             <p>Length: {place?.fields?.length}</p>

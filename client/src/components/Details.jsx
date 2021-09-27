@@ -16,8 +16,8 @@ export default function Details() {
   }, []);
 
   return (
-    <div className="bg-indigo-300 rounded-lg shadow-lg">
-      <div className="flex flex-wrap w-1/2 mb-4" >
+    <div className="bg-indigo-300 rounded-lg shadow-lg p-1">
+      <div className="flex flex-wrap w-1/3 mb-4" >
         <img src={place?.fields?.image} className="rounded-lg shadow" alt="Yr Weeknd" />
       </div>
       <div className="flex mb-4" >

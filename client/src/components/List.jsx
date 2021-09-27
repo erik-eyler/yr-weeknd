@@ -17,8 +17,8 @@ export default function List() {
       {places.map((place) => {
         return (
           <Link to={`/places/${place.id}`} key={place.id}>
-            <h3>{place.fields.location}</h3>
-            <img src={place.fields.image} className="w-2/3 h-2/3 mx-auto rounded-lg shadow" alt="Yr Weeknd" />
+            <p>{place.fields.location}</p>
+            <img src={place.fields.image} className="w-2/3 h-2/3 my-1 mx-auto rounded-lg shadow" alt="Yr Weeknd" />
           </Link>
         );
       })}

@@ -1,7 +1,7 @@
-export default function Random() {
-  return (
-    <div>
+// export default function Random() {
+//   return (
+//     <div>
       
-    </div>
-  )
-}
+//     </div>
+//   )
+// }

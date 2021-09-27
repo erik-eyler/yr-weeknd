@@ -32,8 +32,8 @@ export default function Details() {
             <p>Description: {place?.fields?.description}</p>
             </div>
           <div className="flex text-center">
-          <button className="bg-indigo-300 hover:bg-indigo-500 text-white font-bold py-2 px-3 rounded"><Link to={`/places/${place.id}/edit`} >Edit</Link></button>
-          <Delete id={place.id} />
+            <button className="bg-indigo-300 hover:bg-indigo-500 text-white font-bold py-2 px-3 rounded"><Link to={`/places/${place.id}/edit`} >Edit</Link></button>
+            <Delete id={place.id} />
           </div>
         </div>
 

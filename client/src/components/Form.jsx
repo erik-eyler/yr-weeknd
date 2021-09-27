@@ -1,6 +1,6 @@
 export default function Form(props) {
   return (
-    <div className="flex justify-center items-center h-screen w-full bg-indigo-300">
+    <div className="flex justify-center items-center h-screen w-screen bg-indigo-300">
       <div className="w-1/2 bg-white rounded shadow-2xl p-8 m-4">
       <form onSubmit={props.handleSubmit}>
         <div className="flex flex-col mb-4" >

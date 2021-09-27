@@ -18,28 +18,25 @@ export default function Details() {
   return (
     <div className="bg-white w-screen h-screen flex flex-row flex-wrap p-1">
       <div className="mx-auto w-2/3">
-        <div className="bg-indigo-300 rounded-lg shadow-lg w-full flex-row flex-wrap p-1">
+        <div className="bg-indigo-300 rounded-lg shadow-lg w-full flex flex-row flex-wrap p-1">
 
-        <div className="flex flex-wrap md:w-1/3 w-full" >
+        <div className="md:w-1/3 w-full" >
           <img src={place?.fields?.image} className="rounded-lg shadow" alt="Yr Weeknd" />
         </div>
-        <div className="flex mb-4" >
-          <h4>Location: {place?.fields?.location}</h4>
-        </div>
-        <div className="flex flex-wrap mb-4" >
-          <h4>Activity: {place?.fields?.activity}</h4>
-        </div>
-        <div className="flex flex-wrap mb-4" >
-          <h4>Length: {place?.fields?.length}</h4>
-        </div>
-        <div className="flex flex-wrap mb-4" >
-          <h4>Rating: {place?.fields?.rating}</h4>
-        </div>
-        <div className="flex flex-wrap mb-4" >
-          <h4>Description: {place?.fields?.description}</h4>
-        </div>
-        <Link to={`/places/${place.id}/edit`}>Edit</Link>
+        <div className="md:w-2/3 w-full px-4 flex flex-row flex-wrap">
+          <div className="mb-2 uppercase font-bold text-lg text-grey-darkest text-left" >
+            <p>Location: {place?.fields?.location}</p>
+            <p>Activity: {place?.fields?.activity}</p>
+            <p>Length: {place?.fields?.length}</p>
+            <p>Rating: {place?.fields?.rating}</p>
+            <p>Description: {place?.fields?.description}</p>
+            </div>
+          <div className="flex text-center">
+          <button className="bg-indigo-300 hover:bg-indigo-500 text-white font-bold py-2 px-3 rounded"><Link to={`/places/${place.id}/edit`} >Edit</Link></button>
           <Delete id={place.id} />
+          </div>
+        </div>
+
           </div>
       </div>
     </div>

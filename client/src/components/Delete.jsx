@@ -10,7 +10,7 @@ export default function Delete(props) {
   }
   return (
     <div>
-      <button onClick={handleDelete}>Delete</button>
+      <button onClick={handleDelete} className="bg-indigo-300 hover:bg-indigo-500 text-white font-bold py-2 px-3 rounded">Delete</button>
     </div>
   )
 }
